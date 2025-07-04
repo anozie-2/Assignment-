@@ -19,3 +19,22 @@ int main() {
 
     return 0;
 }
+import java.util.Scanner;
+
+public class StaticArrayExample {
+    public static void main(String[] args) {
+        int[] arr = new int[10]; // Static array of size 10
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter 10 integers:");
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = scanner.nextInt();
+        }
+
+        System.out.println("You entered:");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        scanner.close();
+    }
+}
